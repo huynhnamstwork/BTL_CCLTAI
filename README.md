@@ -1,10 +1,10 @@
-# 🚗 Hệ thống đếm xe qua camera sử dụng YOLO pretrained
+#  Hệ thống đếm xe qua camera sử dụng YOLO pretrained
 
 > Bài tập lớn – Trường Đại học Thăng Long – Chuyên ngành Trí tuệ nhân tạo
 
 Hệ thống đếm phương tiện giao thông (xe máy, ô tô, xe tải/xe buýt) theo thời gian thực từ luồng camera giám sát. Dự án không chỉ dừng ở việc train một mô hình AI mà hướng tới một **hệ thống MLOps**: tự động hóa kiểm thử, giám sát sức khỏe mô hình và triển khai không gián đoạn.
 
-## 👥 Nhóm thực hiện
+##  Nhóm thực hiện
 
 | Thành viên | Vai trò | Nhiệm vụ chính |
 | --- | --- | --- |
@@ -13,12 +13,12 @@ Hệ thống đếm phương tiện giao thông (xe máy, ô tô, xe tải/xe bu
 | Lê Quang Khải | Backend | Bọc module bằng FastAPI, xử lý đọc luồng video, cung cấp RESTful endpoint |
 | Huỳnh Hải Nam | MLOps | Đóng gói ứng dụng (Docker), CI/CD trên GitHub, Nginx Canary Deployment |
 
-## 🎯 Đối tượng phục vụ
+##  Đối tượng phục vụ
 
 - **Cán bộ quản lý, điều hành giao thông:** xem biểu đồ đếm xe, cảnh báo kẹt xe, xuất báo cáo lưu lượng theo ngày/tháng.
 - **Nhân viên vận hành:** duy trì hệ thống, theo dõi phân tải, độ trễ và số khung hình/giây (FPS).
 
-## 📦 Phạm vi sản phẩm
+##  Phạm vi sản phẩm
 
 - Nhận diện và phân loại 3 nhóm phương tiện: **Xe máy**, **Ô tô con**, **Xe tải/Xe buýt**.
 - Đếm lưu lượng dựa trên **vạch ảo**.
@@ -26,7 +26,7 @@ Hệ thống đếm phương tiện giao thông (xe máy, ô tô, xe tải/xe bu
 - Phân luồng traffic bằng **Nginx** (Canary Deployment).
 - Giám sát hiệu năng và độ trễ của model.
 
-## ✨ Tính năng
+##  Tính năng
 
 | Tính năng | Mô tả |
 | --- | --- |
@@ -38,7 +38,7 @@ Hệ thống đếm phương tiện giao thông (xe máy, ô tô, xe tải/xe bu
 | Canary Deployment | Nginx chia traffic giữa model cũ và model mới theo tỷ lệ cấu hình được |
 | Giám sát | Prometheus thu thập số liệu realtime, Grafana vẽ dashboard |
 
-## 🔄 Luồng hoạt động
+##  Luồng hoạt động
 
 1. Hệ thống đọc luồng từ IP Camera hoặc file `.mp4`, đưa khung hình vào hàng đợi.
 2. Khung hình lần lượt qua mô hình YOLO, trả về tọa độ bounding box và nhãn phân loại.
@@ -48,11 +48,11 @@ Hệ thống đếm phương tiện giao thông (xe máy, ô tô, xe tải/xe bu
 
 Sơ đồ chi tiết: [docs/ARCHITECTURE.md](docs/ARCHITECTURE.md).
 
-## 🧱 Công nghệ
+##  Công nghệ
 
 `Python` · `YOLO` · `DeepSORT` · `OpenCV` · `FastAPI` · `Docker` · `GitHub Actions` · `Nginx` · `Prometheus` · `Grafana`
 
-## 📁 Cấu trúc repository
+##  Cấu trúc repository
 
 ```
 .
@@ -76,7 +76,7 @@ Sơ đồ chi tiết: [docs/ARCHITECTURE.md](docs/ARCHITECTURE.md).
 └── requirements.txt
 ```
 
-## 🚀 Chạy thử
+## Chạy thử
 
 ```bash
 git clone https://github.com/<ten-nhom>/vehicle-counting-mlops.git
@@ -96,11 +96,11 @@ docker compose up --build
 | Prometheus | http://localhost:9090 |
 | Grafana | http://localhost:3000 |
 
-## 🌿 Quy trình Git
+##  Quy trình Git
 
 Nhóm làm việc theo mô hình nhánh `main` / `develop` / `feature/*` kèm Pull Request và review chéo. Xem [GIT_WORKFLOW.md](GIT_WORKFLOW.md).
 
-## 📌 Tiến độ
+##  Tiến độ
 
 - [ ] Fine-tune YOLO và tích hợp DeepSORT
 - [ ] Logic đếm bằng vạch ảo
