@@ -46,7 +46,7 @@ Hệ thống đếm phương tiện giao thông (xe máy, ô tô, xe tải/xe bu
 4. Hệ thống kiểm tra tọa độ tâm của từng ID qua các khung hình; nếu cắt vạch ảo, biến đếm của nhãn tương ứng tăng 1.
 5. Kết quả được lưu lại, Grafana vẽ lại biểu đồ mật độ giao thông.
 
-Sơ đồ chi tiết: [docs/ARCHITECTURE.md](docs/ARCHITECTURE.md).
+Sơ đồ chi tiết: [docs/Kien_Truc.md](docs/Kien_Truc.md).
 
 ##  Công nghệ
 
