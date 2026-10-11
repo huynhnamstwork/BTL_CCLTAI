@@ -1,0 +1,9 @@
+fastapi
+uvicorn[standard]
+opencv-python-headless
+ultralytics
+deep-sort-realtime
+prometheus-client
+pytest
+httpx
+ruff

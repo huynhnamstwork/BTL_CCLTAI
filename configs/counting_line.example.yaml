@@ -1,0 +1,7 @@
+# Ví dụ cấu hình vạch ảo (toạ độ pixel)
+source: data/sample.mp4        # hoặc rtsp://...
+lines:
+  - name: line_1
+    start: [100, 400]
+    end: [900, 400]
+classes: [car, motorcycle, bus, truck]

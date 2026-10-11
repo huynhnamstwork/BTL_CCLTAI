@@ -1,0 +1,21 @@
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.env
+.ipynb_checkpoints/
+.pytest_cache/
+.vscode/
+.idea/
+.DS_Store
+
+# Dữ liệu và model nặng
+*.pt
+*.pth
+*.onnx
+*.mp4
+*.avi
+data/*
+models/*
+!data/.gitkeep
+!models/.gitkeep
