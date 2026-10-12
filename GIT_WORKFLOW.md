@@ -45,7 +45,7 @@ Sau đó tạo **Pull Request** vào `develop`.
 | `test:` | Thêm/sửa test |
 | `ci:` | Sửa CI/CD, Docker, Nginx |
 
-## 5. Phân công review (gợi ý)
+## 5. Phân công review 
 
 | Người viết | Người review |
 | --- | --- |
