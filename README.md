@@ -1,7 +1,5 @@
 #  Hệ thống đếm xe qua camera sử dụng YOLO pretrained
 
-> Bài tập lớn – Trường Đại học Thăng Long – Chuyên ngành Trí tuệ nhân tạo
-
 Hệ thống đếm phương tiện giao thông (xe máy, ô tô, xe tải/xe buýt) theo thời gian thực từ luồng camera giám sát. Dự án không chỉ dừng ở việc train một mô hình AI mà hướng tới một **hệ thống MLOps**: tự động hóa kiểm thử, giám sát sức khỏe mô hình và triển khai không gián đoạn.
 
 ##  Nhóm thực hiện
